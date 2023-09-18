@@ -16,7 +16,7 @@ let titulo = document.querySelector('#titulo');
 
 function cambiarTitulo(texto){
 
-document.querySelector('#titulo').innerHTML(texto);
+document.querySelector('#titulo').innerHTML = texto;
 }
 
 console.log(pelicula.mostrar());
