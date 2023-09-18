@@ -1,0 +1,16 @@
+h1 es un titulo 
+h2 es un titulo mas chico 
+p es un parrafo 
+br genera un salto de pagina 
+hr genera una linea divisoria
+ul lista   desordenada 
+ol lista ordanada 
+li items dentro de una lista 
+img es la etiqueta de imagen 
+    // width este atributo determina el tamaño de una imagen
+    // alt permite agregar una descripcion en texto de la imagen. Funciona como nombre de la imagen
+<a>hiperVinculo</> la etiqueta a permite agregar un link 
+    // el atributo href es donde se pone el link 
+================================
+CSS Hojas de estilo en cascada. Permite darle forma estilo colores a una pagina web. 
+  
