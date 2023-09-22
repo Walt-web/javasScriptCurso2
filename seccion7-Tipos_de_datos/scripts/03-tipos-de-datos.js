@@ -68,8 +68,8 @@ pelicula.genero = null;
 
 //console.log(pelicula);
 
-for(propiedad in pelicula){
-    let dato_actual = pelicula[propiedad];
+for(index in pelicula){
+    let dato_actual = pelicula[index];
     if(dato_actual !== null && typeof(dato_actual) !== "function"){
         console.log(dato_actual);
     }
@@ -81,4 +81,24 @@ for(propiedad in pelicula){
 animal = Symbol("Tigre");
 animal2 = Symbol("Tigre")
 
-console.log(animal === animal2);
+console.log(animal === animal2); //Esto retorna false 
+
+//El encadenamiento opcional se expresa con un signo ? posterior a la variable declarada ej
+//Si quiero acceder a una pripiedad que no existe en el objeto genera un error en consola
+//Con el signo ? salvo ese error y no retorna undefined ese para la propiedad y su propiedad consecutiva
+
+const adventure = {
+    cat: {
+        name: "Momo",
+        edad: 2
+    },
+    dog: {
+        name: "pepe",
+        edad: 1
+    }
+}
+
+let detailCat = adventure.tiger?.apellido;
+console.log(`Este es el resultado del detalle de Cat ${detailCat}`);
+//Retorna  "Este es el resultado del detalle de Cat undefined"
+
