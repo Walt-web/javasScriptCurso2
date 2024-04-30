@@ -8,3 +8,46 @@ function saludo(persona = "Ricardo",anio = 1999){
 }
 
 saludo();
+ 
+let prueba = param => `Esto es una prueba que rotorna el valor ${param}`;
+console.log(prueba("PRUEBA RETURN"));
+
+function prueba1() {
+
+}
+
+let saludo4 = (nombre,pais ) => "Hola, te mando un saludo " + nombre + " de " + pais;
+
+console.log(saludo4("Pepe", "España"));
+
+let saludo5 = (nombre,pais ) => {
+    let continente;
+
+    if (pais === "España"){
+        continente = "Europa";
+    } else {continente = "Asia";}
+
+    return "Hola, te mando un saludo " + nombre + " de " + pais + " y el continente es " + continente ;
+}
+
+console.log(saludo5("Juan","Argentina"));
+
+/////////
+
+let tienda = {
+    nombre: "Game",
+    videoJuegos: ["GTA", "WWE", "FIFA"],
+    mostrar: function(){
+        this.videoJuegos.forEach(juego => console.log(juego))
+    },
+    mostrar2(){
+        console.log(this.nombre);
+    },
+    mostrar3: () => {
+        console.log(tienda.nombre);
+    },
+};
+
+tienda.mostrar();
+//tienda.mostrar2();
+//tienda.mostrar3();

@@ -68,4 +68,27 @@ animal2 = Symbol("Tigre")
 console.log(animal === animal2); //Esto retorna false 
 ===============
 Encadenamiento opcional 
-  
+===================
+
+/*Funciones una funcion normal se declara con la palabra reservado function,  
+el nombre de la funcion, los parametros de entrada o solo () si no lleva parametros. 
+Y entre llaves la funcion. */
+
+function saludo(nombre) {
+    console.log("Hola " + nombre);
+}
+
+/*la funcion flecha se declara con una variable, el nombre de la variable,  = y los parametros de entrada 
+despues la flecha y entre llaves lo que se ejecuta como parte de la funcion 
+
+EJ: */
+
+let multiplicacion = (n1,n2) => {
+    console.log("Esto es una multiplicacion " + n1*n2);
+};
+
+
+==========
+Arrow function dentro de un json. 
+/**/ Dentro de las propiedades de un objeto json podemos declarar funciones. 
+Ya sea con la palabra reservado function o con funcion flecha por ejemplo. 
