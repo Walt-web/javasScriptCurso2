@@ -92,3 +92,31 @@ let multiplicacion = (n1,n2) => {
 Arrow function dentro de un json. 
 /**/ Dentro de las propiedades de un objeto json podemos declarar funciones. 
 Ya sea con la palabra reservado function o con funcion flecha por ejemplo. 
+
+
+==================
+let variableEjemplo = [Valor1, Valor2];
+Con "for of" Accedo al contenido de cada elemento del array como si hiciera un for normal.
+
+for variableCreadaEnOf of variableEjemplo {
+    console.log(variableCreadaEnOf);
+}
+imprime: Valor1 Valor2
+
+Con for in accedo al valor del indice del array. 
+
+for indiceDelEjemplo in variableEjemplo {
+    console.log(indiceDelEjemplo);
+}
+imprime: 0 1
+
+==================
+forEach
+//Se llama a la funcion For Each. Se puede crear una funcion que obtiene 
+//el valor de cada indice del arreglo, el indice y el objeto array si se indican estos parametros
+nombres.forEach(function(nombre_actual,index,arreglo){
+    console.log(index,nombre_actual,arreglo[index]);
+});
+
+nombres.forEach((nombre_actual,index) => console.log(index,nombre_actual,arreglo[index]));
+
