@@ -120,3 +120,4 @@ nombres.forEach(function(nombre_actual,index,arreglo){
 
 nombres.forEach((nombre_actual,index) => console.log(index,nombre_actual,arreglo[index]));
 
+================================
