@@ -30,11 +30,10 @@ function mostrarProductos() {
         console.log("...Cargando")
         setTimeout(() => {
             //resolve(productos)
-            reject("A ocurrido un error")
+            reject(Error("A ocurrido un error"))
         }, 3500);
     });
 }
 
-mostrarProductos().then(items => {
-    console.log(items)
-});
+mostrarProductos().then(items => console.log(items))
+                .catch(error => console.log(error.message));

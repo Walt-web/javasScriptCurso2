@@ -120,4 +120,14 @@ nombres.forEach(function(nombre_actual,index,arreglo){
 
 nombres.forEach((nombre_actual,index) => console.log(index,nombre_actual,arreglo[index]));
 
-================================
+==================
+Spread; 
+1- Dado un array el spread permite obtener todos los elementos del array. 
+ej: 
+let nombres = ["Juan","Carlos","Ramon"];
+console.log(...nombres);
+2- En el caso de por ej ejemplo una funcion que recibe parametros de un array
+Toma los primeros valores del array para pasarlos a la funcion. 
+miFuncion(...miArray) //Espera Param1 y Param2. 
+3- Tambien por ejemplo si construyo otro array puedo agregar con Spread los valores de otro arrray. 
+miSegundoArray= [Value3,Value4,...miArray] //esto crea el segundo array con todos los valores 

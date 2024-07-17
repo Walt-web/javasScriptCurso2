@@ -34,7 +34,10 @@ let recorrerObjeto = () => {
     return compra
 }
 
+console.log("Funcion Recorrer Objeto;", recorrerObjeto());
+
 function compraProducto() {
+    console.log("Buscando producto TV")
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(recorrerObjeto())
@@ -42,6 +45,10 @@ function compraProducto() {
 
     });
 }
+
+console.log(compraProducto().then(producto => {
+    producto;
+} ))
 
 function obtenerProductosProm() {
 
