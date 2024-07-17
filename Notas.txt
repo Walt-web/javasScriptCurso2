@@ -131,3 +131,20 @@ Toma los primeros valores del array para pasarlos a la funcion.
 miFuncion(...miArray) //Espera Param1 y Param2. 
 3- Tambien por ejemplo si construyo otro array puedo agregar con Spread los valores de otro arrray. 
 miSegundoArray= [Value3,Value4,...miArray] //esto crea el segundo array con todos los valores 
+
+npm install -g typescript
+tsc -init 
+tsc -w
+
+- Tipos de dato. 
+string
+number
+boolean
+any
+
+Dentro del archivo tsconfig.json 
+puedo configurar 
+
+"rootDir": "./", lee de esta ruta los archivos ts para compilarlos en JS
+"outDir": "./",  guarda los archivos JS compilados que finalmente lee el html
+"strict": true,
